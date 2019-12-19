@@ -49,6 +49,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         print(tasksList)
         cell.textLabel!.text = self.tasksList[indexPath.row]
         memomemo = tasksList
+        
         return cell
     }
     
@@ -131,8 +132,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      
             // セルの選択を解除
-            tableView.deselectRow(at: indexPath, animated: true)
-     
+
+            
+            
             // 別の画面に遷移
             //performSegue(withIdentifier: "toNextViewController", sender: nil)
             

@@ -59,12 +59,12 @@ class AddTaskViewController: UIViewController{
                 self.showError("Error saving task data")
             }
 
-                
-                
         }
         errorLablel.text = "保存しました"
         errorLablel.alpha = 1
     }
 
+    @IBAction func buttoncolor(_ sender: Any) {
+    }
 }
 
