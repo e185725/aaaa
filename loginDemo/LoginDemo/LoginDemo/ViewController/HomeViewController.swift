@@ -103,6 +103,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                     let tasks = document.data()?.keys
                     for i in tasks!{
                         self.tasksList.append(i)
+                        
                     }
                     print("made tastList")
                     self.tableView.reloadData()

@@ -20,7 +20,23 @@ class toNextViewController: UIViewController {
     var tasksList = [String]()
     var db: Firestore!
     
+    @IBAction func alertbutton(_ sender: Any) {
+        let content = UNMutableNotificationContent()
+        content.title = "お知らせ"
+        content.body = "期限の締め切りが近いよー！"
+        content.sound = UNNotificationSound.default
 
+        
+        // トリガーを設定。５秒後に通知がくる
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        // UNNotificationRequestに設定したトリガー指定する
+        // 直ぐに通知を表示
+        let request = UNNotificationRequest(identifier: "immediately", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        
+        
+    }
+    
     @IBAction func button(_ sender: Any) {
         
         label.text = "a2"

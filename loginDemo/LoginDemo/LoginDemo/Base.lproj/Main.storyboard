@@ -62,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1021.7391304347827" y="-559.15178571428567"/>
+            <point key="canvasLocation" x="1021.6" y="-559.35960591133005"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="iOR-Bq-ZRB">
@@ -351,6 +351,14 @@
                                     <segue destination="dyX-FX-EEq" kind="show" id="Wlx-hA-ecg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gV3-iu-4Az">
+                                <rect key="frame" x="160" y="257" width="46" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="alertbutton:" destination="ySK-ck-CwG" eventType="touchUpInside" id="ca1-lu-giN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="kUO-za-71U"/>
@@ -362,7 +370,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvZ-40-GS6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5382" y="-423"/>
+            <point key="canvasLocation" x="5381.6000000000004" y="-423.39901477832512"/>
         </scene>
         <!--Add Task View Controller-->
         <scene sceneID="dBY-ZN-QMi">
@@ -443,14 +451,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2U-WL-h7G">
-                                <rect key="frame" x="168" y="399" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="buttoncolor:" destination="0KA-h0-Cff" eventType="touchUpInside" id="6xW-Fx-FSv"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -463,14 +463,14 @@
                     <navigationItem key="navigationItem" id="a0y-eL-D9N"/>
                     <connections>
                         <outlet property="errorLablel" destination="C8f-bJ-dEp" id="pyo-tI-qlJ"/>
-                        <outlet property="memo2TextField" destination="z2g-Lw-vq2" id="94P-wI-qQs"/>
-                        <outlet property="memoTextField" destination="bVw-b2-3DV" id="thD-tq-cmQ"/>
+                        <outlet property="memo2TextField" destination="bVw-b2-3DV" id="c5K-qH-ENK"/>
+                        <outlet property="memoTextField" destination="bVw-b2-3DV" id="BUm-7p-RpA"/>
                         <outlet property="taskNameTextField" destination="qO5-Dk-EK6" id="XKR-Rc-FzJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9tw-SC-ech" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4895" y="341"/>
+            <point key="canvasLocation" x="4970" y="263"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yQA-7E-Lfn">
@@ -515,7 +515,7 @@
         <image name="icon.png" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1Ap-Sh-TSQ"/>
+        <segue reference="Wlx-hA-ecg"/>
         <segue reference="Zd1-Uo-KIK"/>
         <segue reference="dXd-R5-Qa9"/>
     </inferredMetricsTieBreakers>

@@ -28,6 +28,7 @@
 		32D88619B524F07608BFFD9C /* Pods-LoginDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginDemo.release.xcconfig"; path = "Target Support Files/Pods-LoginDemo/Pods-LoginDemo.release.xcconfig"; sourceTree = "<group>"; };
 		57C96F61990C510A6352595E /* Pods_LoginDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6170A9ED23A3947B00D0C9D9 /* toNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toNextViewController.swift; sourceTree = "<group>"; };
+		61C6948723C6CBD000490D04 /* LoginDemoDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoginDemoDebug.entitlements; sourceTree = "<group>"; };
 		6356130C23802D7E00F73F3D /* LoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6356130F23802D7E00F73F3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6356131123802D7E00F73F3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 		6356130E23802D7E00F73F3D /* LoginDemo */ = {
 			isa = PBXGroup;
 			children = (
+				61C6948723C6CBD000490D04 /* LoginDemoDebug.entitlements */,
 				6363E5772383F27E00DDB52A /* images */,
 				63C994432382C67D00B0E640 /* helper */,
 				6356132723802E8A00F73F3D /* ViewController */,
@@ -412,8 +414,9 @@
 			baseConfigurationReference = B49E5F1AAE0AD005F6F08BFF /* Pods-LoginDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LoginDemo/LoginDemoDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6L2V492748;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LoginDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

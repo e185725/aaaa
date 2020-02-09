@@ -4,7 +4,7 @@
 //
 //  Created by 本間ののか on 2019/12/03.
 //  Copyright © 2019 本間ののか. All rights reserved.
-//
+//aaaaa
 
 import UIKit
 import FirebaseFirestore
@@ -12,11 +12,12 @@ import FirebaseAuth
 
 class AddTaskViewController: UIViewController{
     
-    @IBOutlet weak var taskNameTextField: UITextField!
     
+    @IBOutlet weak var taskNameTextField: UITextField!
     @IBOutlet weak var memoTextField: UITextView!
     @IBOutlet weak var errorLablel: UILabel!
     @IBOutlet weak var memo2TextField: UITextView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +65,5 @@ class AddTaskViewController: UIViewController{
         errorLablel.alpha = 1
     }
 
-    @IBAction func buttoncolor(_ sender: Any) {
-    }
 }
 
